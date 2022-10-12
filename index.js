@@ -9,10 +9,12 @@ const volume = document.getElementById("volume-Convertion")
 const mass = document.getElementById("mass-Convertion")
 const convertBtn = document.getElementById("convert-Btn")
 const inputNum = document.getElementById("input-Num")
+const alertMessage = document.getElementById("alert")
 
 
 convertBtn.addEventListener("click" , function() {
-    /* Lenght section */
+    
+        /* Lenght section */
     const lenghtMeters = (inputNum.value*0.3048).toFixed(3)
     const lenghtFeet = (inputNum.value*3.281).toFixed(3)
     lenght.textContent = `${inputNum.value} meters = ${lenghtFeet} feet | ${inputNum.value} feet = ${lenghtMeters} meters`
